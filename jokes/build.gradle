@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+jar {
+    from "assets/jokes.db"
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    sourceCompatibility = 1.7
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Heres a joke for you:</string>
+    <string name="jokes_intro">Heres one you probably haven\'t heard:</string>
+    <string name="error_initializing_activity">Error initializing JokesActitiy. Check intent.</string>
+</resources>
