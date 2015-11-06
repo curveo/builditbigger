@@ -27,7 +27,6 @@ android {
             applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
-    sourceSets { main { java.srcDirs = ['src/main/java', 'src/androidTestFree'] } }
 }
 
 dependencies {
@@ -35,6 +34,6 @@ dependencies {
     // Added for AdMob
     compile project(":jokesandroidlibrary")
     compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.google.android.gms:play-services:8.1.0'
+    freeCompile 'com.google.android.gms:play-services:8.1.0'
     compile project(path: ':backend', configuration: 'android-endpoints')
 }
