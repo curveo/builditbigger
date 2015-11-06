@@ -40,9 +40,6 @@ task runTests {
     mustRunAfter "startAppengine"
     //Run connected tests
     dependsOn = ["prepareAppTest", "startAppengine", "app:connectedAndroidTest"]
-//    doLast {
-//        println "run app test"
-//    }
     finalizedBy {
         println "run app test"
         "backend:appengineStop"
